@@ -4,15 +4,17 @@
   "description": "vocabulary review",
   "main": "index.js",
   "scripts": {
+    "serve": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "repalabra"
+    "url": "https://github.com/harrel56/repalabra"
   },
   "author": "harrel56",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
   }
 }

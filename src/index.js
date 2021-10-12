@@ -1,13 +1,14 @@
-const express = require('express')
-const app = express()
-const port = 3080
+const express = require('express');
+const app = express();
+const port = 3080;
 
-app.use(express.static('static'))
+app.set('view engine', 'pug');
+app.use(express.static('static'));
 
-app.get('/', (req, res) => {
-    res.redirect('/index.html')
+app.get('/*', (req, res) => {
+  res.render('index');
 });
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-})
+  console.log(`Example app listening at http://localhost:${port}`);
+});
